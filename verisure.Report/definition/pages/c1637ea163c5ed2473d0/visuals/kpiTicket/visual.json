@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "cardPrecioExtra",
+  "name": "kpiTicket",
   "position": {
-    "x": 1040,
-    "y": 90,
-    "z": 6,
-    "width": 220,
-    "height": 150,
+    "x": 860,
+    "y": 100,
+    "z": 3,
+    "width": 390,
+    "height": 120,
     "tabOrder": 6
   },
   "visual": {
@@ -17,19 +17,15 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
-                      },
-                      "Property": "PRECIOKIT_EXTRA"
-                    }
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
                   },
-                  "Function": 1
+                  "Property": "Ticket Promedio"
                 }
               },
-              "queryRef": "Average(TB_FIN_ANALISIS.PRECIOKIT_EXTRA)"
+              "queryRef": "TB_FIN_ANALISIS.Ticket Promedio",
+              "active": true
             }
           ]
         }
@@ -40,8 +36,10 @@
         {
           "properties": {
             "show": true,
-            "text": "Precio Extra Promedio",
-            "fontSize": 12
+            "text": "Ticket Promedio",
+            "fontColor": { "solid": { "color": "#1F2A38" } },
+            "fontSize": 14,
+            "fontFamily": "Segoe UI Semibold"
           }
         }
       ],
@@ -82,8 +80,8 @@
       "labels": [
         {
           "properties": {
-            "fontSize": 28,
-            "color": { "solid": { "color": "#1976D2" } }
+            "fontSize": 32,
+            "color": { "solid": { "color": "#1F2A38" } }
           }
         }
       ],

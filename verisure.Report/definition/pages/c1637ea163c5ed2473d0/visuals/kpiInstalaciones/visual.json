@@ -1,35 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "chartFormaPago",
+  "name": "kpiInstalaciones",
   "position": {
-    "x": 860,
-    "y": 260,
-    "z": 9,
-    "width": 400,
-    "height": 340,
-    "tabOrder": 9
+    "x": 445,
+    "y": 100,
+    "z": 3,
+    "width": 390,
+    "height": 120,
+    "tabOrder": 5
   },
   "visual": {
-    "visualType": "donutChart",
+    "visualType": "card",
     "query": {
       "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
-                  },
-                  "Property": "FORMAPAGO_ACT"
-                }
-              },
-              "queryRef": "TB_FIN_ANALISIS.FORMAPAGO_ACT",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -39,13 +23,14 @@
                       "Expression": {
                         "SourceRef": { "Entity": "TB_CONS_5902" }
                       },
-                      "Property": "TOTAL"
+                      "Property": "Instalación"
                     }
                   },
-                  "Function": 0
+                  "Function": 5
                 }
               },
-              "queryRef": "Sum(TB_CONS_5902.TOTAL)",
+              "queryRef": "CountNonBlank(TB_CONS_5902.Instalación)",
+              "displayName": "N° Instalaciones",
               "active": true
             }
           ]
@@ -57,8 +42,10 @@
         {
           "properties": {
             "show": true,
-            "text": "Distribución por Forma de Pago",
-            "fontSize": 14
+            "text": "N° Instalaciones",
+            "fontColor": { "solid": { "color": "#1F2A38" } },
+            "fontSize": 14,
+            "fontFamily": "Segoe UI Semibold"
           }
         }
       ],
@@ -96,19 +83,18 @@
       ]
     },
     "objects": {
-      "legend": [
-        {
-          "properties": {
-            "show": true,
-            "position": "Right"
-          }
-        }
-      ],
       "labels": [
         {
           "properties": {
-            "show": true,
-            "fontSize": 11
+            "fontSize": 32,
+            "color": { "solid": { "color": "#1F2A38" } }
+          }
+        }
+      ],
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": false
           }
         }
       ]

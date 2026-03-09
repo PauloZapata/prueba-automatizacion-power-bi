@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "chartTendenciaMensual",
+  "name": "chartTendencia",
   "position": {
-    "x": 440,
-    "y": 260,
-    "z": 8,
-    "width": 400,
-    "height": 340,
-    "tabOrder": 8
+    "x": 30,
+    "y": 240,
+    "z": 4,
+    "width": 750,
+    "height": 220,
+    "tabOrder": 7
   },
   "visual": {
     "visualType": "lineChart",
@@ -33,36 +33,14 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": { "Entity": "TB_CONS_5902" }
-                      },
-                      "Property": "TOTAL"
-                    }
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
                   },
-                  "Function": 0
+                  "Property": "Total Ingresos"
                 }
               },
-              "queryRef": "Sum(TB_CONS_5902.TOTAL)",
-              "active": true
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": { "Entity": "TB_CONS_5902" }
-                      },
-                      "Property": "Instalación"
-                    }
-                  },
-                  "Function": 5
-                }
-              },
-              "queryRef": "CountNonBlank(TB_CONS_5902.Instalación)",
+              "queryRef": "TB_FIN_ANALISIS.Total Ingresos",
               "active": true
             }
           ]
@@ -74,8 +52,10 @@
         {
           "properties": {
             "show": true,
-            "text": "Tendencia Mensual de Ingresos e Instalaciones",
-            "fontSize": 14
+            "text": "Tendencia Mensual de Ingresos",
+            "fontColor": { "solid": { "color": "#1F2A38" } },
+            "fontSize": 14,
+            "fontFamily": "Segoe UI Semibold"
           }
         }
       ],
@@ -130,11 +110,18 @@
           }
         }
       ],
-      "legend": [
+      "labels": [
         {
           "properties": {
             "show": true,
-            "position": "Top"
+            "fontSize": 9
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "strokeWidth": 3
           }
         }
       ],
@@ -145,7 +132,7 @@
           }
         }
       ],
-      "labels": [
+      "legend": [
         {
           "properties": {
             "show": false

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "chartTipoKit",
+  "name": "chartKits",
   "position": {
-    "x": 20,
-    "y": 620,
-    "z": 10,
+    "x": 30,
+    "y": 480,
+    "z": 5,
     "width": 600,
-    "height": 250,
-    "tabOrder": 10
+    "height": 220,
+    "tabOrder": 9
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -33,19 +33,14 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
-                      },
-                      "Property": "contrato"
-                    }
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
                   },
-                  "Function": 5
+                  "Property": "Total Ingresos"
                 }
               },
-              "queryRef": "CountNonBlank(TB_FIN_ANALISIS.contrato)",
+              "queryRef": "TB_FIN_ANALISIS.Total Ingresos",
               "active": true
             }
           ]
@@ -57,8 +52,10 @@
         {
           "properties": {
             "show": true,
-            "text": "Top Tipos de Kit por Contratos",
-            "fontSize": 11
+            "text": "Ingresos por Tipo de Kit",
+            "fontColor": { "solid": { "color": "#1F2A38" } },
+            "fontSize": 14,
+            "fontFamily": "Segoe UI Semibold"
           }
         }
       ],
@@ -129,5 +126,49 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "filterBlankTipoKit",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+            },
+            "Property": "TIPOKIT"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            { "Name": "t", "Entity": "TB_FIN_ANALISIS" }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": { "SourceRef": { "Source": "t" } },
+                          "Property": "TIPOKIT"
+                        }
+                      },
+                      "Right": {
+                        "Literal": { "Value": "null" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 }

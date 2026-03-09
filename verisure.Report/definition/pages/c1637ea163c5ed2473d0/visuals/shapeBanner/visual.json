@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
-  "name": "headerBackground",
+  "name": "shapeBanner",
   "position": {
     "x": 0,
     "y": 0,
     "z": 0,
     "width": 1280,
-    "height": 70,
+    "height": 80,
     "tabOrder": 0
   },
   "visual": {
@@ -16,7 +16,7 @@
         {
           "properties": {
             "show": true,
-            "fillColor": { "solid": { "color": "#D32F2F" } }
+            "fillColor": { "solid": { "color": "#E2001A" } }
           }
         }
       ],

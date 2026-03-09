@@ -76,6 +76,14 @@ table TB_FIN_ANALISIS
 
 		annotation SummarizationSetBy = Automatic
 
+	measure 'Total Ingresos' = SUM('TB_CONS_5902'[TOTAL])
+		formatString: $ #,##0.00
+		lineageTag: a1b2c3d4-0001-4000-8000-000000000001
+
+	measure 'Ticket Promedio' = AVERAGE('TB_FIN_ANALISIS'[PRECIOKIT_EXTRA])
+		formatString: $ #,##0.00
+		lineageTag: a1b2c3d4-0002-4000-8000-000000000002
+
 	partition TB_FIN_ANALISIS = m
 		mode: import
 		source = ```

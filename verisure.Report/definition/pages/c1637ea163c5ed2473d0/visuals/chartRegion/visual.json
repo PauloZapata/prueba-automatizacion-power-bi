@@ -1,0 +1,174 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "chartRegion",
+  "position": {
+    "x": 650,
+    "y": 480,
+    "z": 5,
+    "width": 600,
+    "height": 220,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "REGION_PORTFOLIO"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.REGION_PORTFOLIO",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "Total Ingresos"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.Total Ingresos",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Ingresos por Región",
+            "fontColor": { "solid": { "color": "#1F2A38" } },
+            "fontSize": 14,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": true,
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": true,
+            "color": { "solid": { "color": "#E0E0E0" } },
+            "radius": 8
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": true,
+            "preset": "BottomRight",
+            "color": { "solid": { "color": "#000000" } },
+            "transparency": 90,
+            "shadowSpread": 0,
+            "shadowBlur": 8,
+            "angle": 315,
+            "shadowDistance": 4
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "show": true,
+            "showAxisTitle": false
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": true,
+            "showAxisTitle": false,
+            "gridlineShow": false
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": true,
+            "fontSize": 9
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "filterBlankRegionChart",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+            },
+            "Property": "REGION_PORTFOLIO"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            { "Name": "t", "Entity": "TB_FIN_ANALISIS" }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": { "SourceRef": { "Source": "t" } },
+                          "Property": "REGION_PORTFOLIO"
+                        }
+                      },
+                      "Right": {
+                        "Literal": { "Value": "null" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "chartPagos",
+  "position": {
+    "x": 800,
+    "y": 240,
+    "z": 4,
+    "width": 450,
+    "height": 220,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "FORMAPAGO_ACT"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.FORMAPAGO_ACT",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "Total Ingresos"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.Total Ingresos",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Distribución por Forma de Pago",
+            "fontColor": { "solid": { "color": "#1F2A38" } },
+            "fontSize": 14,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": true,
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": true,
+            "color": { "solid": { "color": "#E0E0E0" } },
+            "radius": 8
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": true,
+            "preset": "BottomRight",
+            "color": { "solid": { "color": "#000000" } },
+            "transparency": 90,
+            "shadowSpread": 0,
+            "shadowBlur": 8,
+            "angle": 315,
+            "shadowDistance": 4
+          }
+        }
+      ]
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "show": true,
+            "position": "Right"
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": true,
+            "fontSize": 10
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "filterBlankFormaPago",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+            },
+            "Property": "FORMAPAGO_ACT"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            { "Name": "t", "Entity": "TB_FIN_ANALISIS" }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": { "SourceRef": { "Source": "t" } },
+                          "Property": "FORMAPAGO_ACT"
+                        }
+                      },
+                      "Right": {
+                        "Literal": { "Value": "null" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
