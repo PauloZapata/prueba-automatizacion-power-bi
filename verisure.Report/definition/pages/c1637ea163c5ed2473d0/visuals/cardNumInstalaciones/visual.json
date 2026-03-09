@@ -44,6 +44,39 @@
             "fontSize": 12
           }
         }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": true,
+            "color": { "solid": { "color": "#E0E0E0" } },
+            "radius": 8
+          }
+        }
+      ]
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "fontSize": 28,
+            "color": { "solid": { "color": "#424242" } }
+          }
+        }
+      ],
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
       ]
     }
   }

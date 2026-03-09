@@ -24,11 +24,12 @@
                   "Property": "MESVENTA"
                 }
               },
-              "queryRef": "TB_FIN_ANALISIS.MESVENTA"
+              "queryRef": "TB_FIN_ANALISIS.MESVENTA",
+              "active": true
             }
           ]
         },
-        "Values": {
+        "Y": {
           "projections": [
             {
               "field": {
@@ -44,7 +45,8 @@
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(TB_CONS_5902.TOTAL)"
+              "queryRef": "Sum(TB_CONS_5902.TOTAL)",
+              "active": true
             },
             {
               "field": {
@@ -60,7 +62,8 @@
                   "Function": 5
                 }
               },
-              "queryRef": "CountNonBlank(TB_CONS_5902.Instalación)"
+              "queryRef": "CountNonBlank(TB_CONS_5902.Instalación)",
+              "active": true
             }
           ]
         }
@@ -73,6 +76,63 @@
             "show": true,
             "text": "Tendencia Mensual de Ingresos e Instalaciones",
             "fontSize": 14
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": true,
+            "color": { "solid": { "color": "#E0E0E0" } },
+            "radius": 8
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "show": true,
+            "showAxisTitle": false
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": true,
+            "showAxisTitle": false,
+            "gridlineShow": false
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": true,
+            "position": "Top"
+          }
+        }
+      ],
+      "markers": [
+        {
+          "properties": {
+            "show": true
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": false
           }
         }
       ]

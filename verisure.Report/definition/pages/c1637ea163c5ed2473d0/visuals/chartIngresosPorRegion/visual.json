@@ -10,7 +10,7 @@
     "tabOrder": 7
   },
   "visual": {
-    "visualType": "columnChart",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -24,11 +24,12 @@
                   "Property": "REGION_PORTFOLIO"
                 }
               },
-              "queryRef": "TB_FIN_ANALISIS.REGION_PORTFOLIO"
+              "queryRef": "TB_FIN_ANALISIS.REGION_PORTFOLIO",
+              "active": true
             }
           ]
         },
-        "Values": {
+        "Y": {
           "projections": [
             {
               "field": {
@@ -44,7 +45,8 @@
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(TB_CONS_5902.TOTAL)"
+              "queryRef": "Sum(TB_CONS_5902.TOTAL)",
+              "active": true
             }
           ]
         }
@@ -57,6 +59,56 @@
             "show": true,
             "text": "Ingresos por Región",
             "fontSize": 14
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": true,
+            "color": { "solid": { "color": "#E0E0E0" } },
+            "radius": 8
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "show": true,
+            "showAxisTitle": false
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": true,
+            "showAxisTitle": false,
+            "gridlineShow": false
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": true,
+            "fontSize": 10
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": false
           }
         }
       ]

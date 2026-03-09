@@ -10,7 +10,7 @@
     "tabOrder": 10
   },
   "visual": {
-    "visualType": "barChart",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
         "Category": {
@@ -24,11 +24,12 @@
                   "Property": "TIPOKIT"
                 }
               },
-              "queryRef": "TB_FIN_ANALISIS.TIPOKIT"
+              "queryRef": "TB_FIN_ANALISIS.TIPOKIT",
+              "active": true
             }
           ]
         },
-        "Values": {
+        "Y": {
           "projections": [
             {
               "field": {
@@ -44,7 +45,8 @@
                   "Function": 5
                 }
               },
-              "queryRef": "CountNonBlank(TB_FIN_ANALISIS.contrato)"
+              "queryRef": "CountNonBlank(TB_FIN_ANALISIS.contrato)",
+              "active": true
             }
           ]
         }
@@ -57,6 +59,56 @@
             "show": true,
             "text": "Top Tipos de Kit por Contratos",
             "fontSize": 11
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": true,
+            "color": { "solid": { "color": "#E0E0E0" } },
+            "radius": 8
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "show": true,
+            "showAxisTitle": false
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": true,
+            "showAxisTitle": false,
+            "gridlineShow": false
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": true,
+            "fontSize": 9
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": false
           }
         }
       ]

@@ -38,7 +38,67 @@
             "text": "Región"
           }
         }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": true,
+            "color": { "solid": { "color": "#E0E0E0" } },
+            "radius": 8
+          }
+        }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "filterBlankRegion",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+            },
+            "Property": "REGION_PORTFOLIO"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            { "Name": "t", "Entity": "TB_FIN_ANALISIS" }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": { "SourceRef": { "Source": "t" } },
+                          "Property": "REGION_PORTFOLIO"
+                        }
+                      },
+                      "Right": {
+                        "Literal": { "Value": "null" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 }
