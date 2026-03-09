@@ -77,31 +77,7 @@
       ]
     },
     "objects": {
-      "labels": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "32D"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#1F2A38'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryLabels": [
+      "categoryLabel": [
         {
           "properties": {
             "show": {
@@ -129,6 +105,11 @@
                 "Literal": {
                   "Value": "'Ticket Promedio'"
                 }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": "#1F2A38"
               }
             }
           }

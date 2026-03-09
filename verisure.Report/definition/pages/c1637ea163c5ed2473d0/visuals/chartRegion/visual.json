@@ -109,6 +109,11 @@
                   "Value": "'Ingresos por Región'"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": "#1F2A38"
+              }
             }
           }
         }
@@ -116,17 +121,47 @@
       "categoryAxis": [
         {
           "properties": {
-            "show": true,
-            "showAxisTitle": false
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ],
       "valueAxis": [
         {
           "properties": {
-            "show": true,
-            "showAxisTitle": false,
-            "gridlineShow": false
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ],

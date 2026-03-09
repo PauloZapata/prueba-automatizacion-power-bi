@@ -109,6 +109,11 @@
                   "Value": "'Distribución por Forma de Pago'"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": "#1F2A38"
+              }
             }
           }
         }

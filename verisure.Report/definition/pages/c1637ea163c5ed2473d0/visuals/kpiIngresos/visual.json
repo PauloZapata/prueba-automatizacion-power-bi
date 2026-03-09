@@ -77,31 +77,7 @@
       ]
     },
     "objects": {
-      "labels": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "32D"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#E2001A'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryLabels": [
+      "categoryLabel": [
         {
           "properties": {
             "show": {
@@ -129,6 +105,11 @@
                 "Literal": {
                   "Value": "'Total de Ingresos'"
                 }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": "#1F2A38"
               }
             }
           }
