@@ -1,0 +1,10 @@
+relationship 4c79c140-0716-4441-abb3-21c9130e8133
+	joinOnDateBehavior: datePartOnly
+	fromColumn: rpt_diario_balance.fecha_dia
+	toColumn: LocalDateTable_d29bbe1b-7649-40bc-b305-55adc40f63be.Date
+
+relationship AutoDetected_28969235-cbf8-4949-87f3-49148d14bad7
+	crossFilteringBehavior: bothDirections
+	fromColumn: rpt_diario_balance.id_atm
+	toColumn: top_atms_ranking.id_atm
+

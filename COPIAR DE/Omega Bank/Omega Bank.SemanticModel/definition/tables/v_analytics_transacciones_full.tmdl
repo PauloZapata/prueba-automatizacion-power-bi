@@ -1,0 +1,238 @@
+table v_analytics_transacciones_full
+	lineageTag: f99e9e37-59e0-4c21-91a2-36b1b2b21e60
+
+	measure 'KPI Volumen Operado' = SUMX(v_analytics_transacciones_full, ABS(v_analytics_transacciones_full[monto]))
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 9dccb0c7-93e1-4e42-987e-be383a6a91c1
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-US"}
+
+	measure 'KPI Total Transacciones' = COUNTROWS(v_analytics_transacciones_full)
+		formatString: 0
+		lineageTag: ad76ee0e-fe96-4362-a1e5-e3960e502a85
+
+	measure 'KPI Ticket Promedio' = DIVIDE([KPI Volumen Operado], [KPI Total Transacciones])
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: 3e26c0f0-458b-4601-9fb1-840ec126afa6
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-US"}
+
+	measure 'KPI Clientes Activos' = DISTINCTCOUNT(v_analytics_transacciones_full[cliente_nombre])
+		formatString: 0
+		lineageTag: 650664f5-0e26-4c28-890a-9d5383ff5516
+
+	measure 'Total Ingresos' = CALCULATE(SUM(v_analytics_transacciones_full[monto]), v_analytics_transacciones_full[monto] > 0)
+		lineageTag: 02833fdb-24d3-4812-a2c0-9c2bed1f1e7d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Egresos (Abs)' = ABS(CALCULATE(SUM(v_analytics_transacciones_full[monto]), v_analytics_transacciones_full[monto] < 0))
+		lineageTag: ca3909b6-6e2a-43c3-8320-5d0f2ce33196
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column transaction_id
+		dataType: string
+		lineageTag: 5116a384-1af1-48b0-acdd-b01294577245
+		summarizeBy: none
+		sourceColumn: transaction_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_id
+		dataType: string
+		lineageTag: d4ab0f1d-6da6-40e4-ada6-876a40bb2533
+		summarizeBy: none
+		sourceColumn: account_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column branch_id
+		dataType: string
+		lineageTag: adaf2c85-4be4-4367-8698-70f9c7eb2406
+		summarizeBy: none
+		sourceColumn: branch_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column merchant_id
+		dataType: string
+		lineageTag: 02dea067-ca9f-4bd7-b2f3-ff571fab9b06
+		summarizeBy: none
+		sourceColumn: merchant_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column monto
+		dataType: double
+		lineageTag: 7b9db1bc-66e6-4ddf-9213-eea4504164d1
+		summarizeBy: sum
+		sourceColumn: monto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fecha_hora
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1fb9ed13-963e-4e3c-a648-e7c1de9bc14b
+		summarizeBy: none
+		sourceColumn: fecha_hora
+
+		variation Variación
+			isDefault
+			relationship: 75b37f8f-6bfe-41c5-89d6-c62e37cee848
+			defaultHierarchy: LocalDateTable_93bd4f9b-e5b4-4400-8ddd-6609ac560884.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column transaction_type_id
+		dataType: string
+		lineageTag: d5a3e3e0-9115-4f44-883d-530f0e644e47
+		summarizeBy: none
+		sourceColumn: transaction_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_movimiento
+		dataType: string
+		lineageTag: c50a9848-896d-48dd-9c5c-6997c2ad41b2
+		summarizeBy: none
+		sourceColumn: tipo_movimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_historico_cuenta
+		dataType: double
+		lineageTag: b226453f-d6a1-463d-ae55-e11a13fab99a
+		summarizeBy: sum
+		sourceColumn: avg_historico_cuenta
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column year
+		dataType: string
+		lineageTag: 4aa83b3e-8dc6-40ac-a9a1-ae9f9be4d3cc
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: string
+		lineageTag: 014027d5-7b21-48b8-a2cc-648266a69a38
+		summarizeBy: none
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_nombre
+		dataType: string
+		lineageTag: 98a627ca-359c-4020-89d9-6809f2cde2d7
+		summarizeBy: none
+		sourceColumn: cliente_nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_apellido
+		dataType: string
+		lineageTag: 9d028989-cd28-4658-b6b6-6e1f4766febb
+		summarizeBy: none
+		sourceColumn: cliente_apellido
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_profesion
+		dataType: string
+		lineageTag: fdb23bec-ecad-4dfd-8c77-c56d186513c2
+		summarizeBy: none
+		sourceColumn: cliente_profesion
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_cuenta
+		dataType: string
+		lineageTag: 179733d6-dd3e-405c-be39-a8b4a1ffc1c0
+		summarizeBy: none
+		sourceColumn: tipo_cuenta
+
+		annotation SummarizationSetBy = Automatic
+
+	column moneda
+		dataType: string
+		lineageTag: 93893caa-2243-4d79-a5ff-72b76ae6d400
+		summarizeBy: none
+		sourceColumn: moneda
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre_sucursal
+		dataType: string
+		lineageTag: 40dfd219-d9dd-4f4d-b67e-eb7aa053b17a
+		summarizeBy: none
+		sourceColumn: nombre_sucursal
+
+		annotation SummarizationSetBy = Automatic
+
+	column sucursal_ciudad
+		dataType: string
+		lineageTag: f5422d1a-64d0-447e-9cf2-04ac68f1fab9
+		summarizeBy: none
+		sourceColumn: sucursal_ciudad
+
+		annotation SummarizationSetBy = Automatic
+
+	column merchant_name
+		dataType: string
+		lineageTag: 2ab542e5-046d-48f0-8d3f-840665a62f3d
+		summarizeBy: none
+		sourceColumn: merchant_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria_comercio
+		dataType: string
+		lineageTag: 083822c3-e3ee-4380-ad83-97ae56532c14
+		summarizeBy: none
+		sourceColumn: categoria_comercio
+
+		annotation SummarizationSetBy = Automatic
+
+	column saldo_proyectado
+		dataType: double
+		lineageTag: 69d08b38-1a94-496c-841f-beb2702d52b5
+		summarizeBy: sum
+		sourceColumn: saldo_proyectado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dias_desde_ultima_tx
+		dataType: double
+		formatString: 0
+		lineageTag: 7e1ae3b4-1904-454f-b12d-feaaa7abbcc0
+		summarizeBy: sum
+		sourceColumn: dias_desde_ultima_tx
+
+		annotation SummarizationSetBy = Automatic
+
+	partition v_analytics_transacciones_full = m
+		mode: import
+		source =
+				let
+				    Origen = Odbc.DataSource("dsn=Athena_Omega_Bank", [HierarchicalNavigation=true]),
+				    AwsDataCatalog_Database = Origen{[Name="AwsDataCatalog",Kind="Database"]}[Data],
+				    default_Schema = AwsDataCatalog_Database{[Name="default",Kind="Schema"]}[Data],
+				    v_analytics_transacciones_full_Table = default_Schema{[Name="v_analytics_transacciones_full",Kind="Table"]}[Data],
+				    #"Valor reemplazado" = Table.ReplaceValue(v_analytics_transacciones_full_Table,null,0,Replacer.ReplaceValue,{"dias_desde_ultima_tx"})
+				in
+				    #"Valor reemplazado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

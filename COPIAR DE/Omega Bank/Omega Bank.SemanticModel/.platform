@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Omega Bank"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0f1d814a-302b-40e8-9c6b-cef64c2ac537"
+  }
+}

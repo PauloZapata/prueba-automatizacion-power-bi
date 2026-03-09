@@ -1,0 +1,5 @@
+relationship 75b37f8f-6bfe-41c5-89d6-c62e37cee848
+	joinOnDateBehavior: datePartOnly
+	fromColumn: v_analytics_transacciones_full.fecha_hora
+	toColumn: LocalDateTable_93bd4f9b-e5b4-4400-8ddd-6609ac560884.Date
+

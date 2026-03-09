@@ -1,0 +1,2823 @@
+cultureInfo es-ES
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "v_analytics_transacciones_full": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "v analytics transacciones full": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "v analytics transaccione full": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "v_analytics_transacciones_full": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "v analytics transaccione complete": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "v analytics transaccione entire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "v analytics transaccione whole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.transaction_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "transaction_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "transaction id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "transaction_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "transaction": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "transaction identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "transaction identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "transaction identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "transaction credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "deal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "business": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "contract": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "matter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.account_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "account_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "account id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "account_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "account": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "account identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "account identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "account identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "account credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "version": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "justification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reason": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "excuse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.branch_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "branch_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "branch id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "branch_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "branch": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "branch identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "branch identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "branch identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "branch credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "subdivision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "outlet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "office": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "turnoff": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "turn-off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.merchant_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "merchant_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "merchant id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "merchant_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "merchant": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "merchant identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "merchant identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "merchant identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "merchant credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "commercial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "trade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "business": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "trading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "wholesaler": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "dealer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.monto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "monto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "monto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.fecha_hora": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "fecha_hora"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha hora": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha_hora": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "VariationSource": "fecha_hora",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.fecha_hora.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "VariationSource": "fecha_hora",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha hora año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.fecha_hora.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "VariationSource": "fecha_hora",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha hora trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.fecha_hora.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "VariationSource": "fecha_hora",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha hora me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.fecha_hora.día": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "VariationSource": "fecha_hora",
+			          "VariationSet": "Variación",
+			          "Hierarchy": "Jerarquía de fechas",
+			          "HierarchyLevel": "Día"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha hora día": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.transaction_type_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "transaction_type_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "transaction type id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "transaction_type_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "transaction type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "type id": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "transaction type identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "transaction type identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "transaction type identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "transaction category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "transaction genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "transaction manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "transaction variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "type identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "type identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "type identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.tipo_movimiento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "tipo_movimiento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo movimiento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_movimiento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.avg_historico_cuenta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "avg_historico_cuenta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg historico cuenta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "avg_historico_cuenta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "average historico cuenta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.cliente_nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "cliente_nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cliente nombre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cliente_nombre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Nombre": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.cliente_apellido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "cliente_apellido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cliente apellido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cliente_apellido": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Apellido": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.cliente_profesion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "cliente_profesion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cliente profesion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cliente_profesion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.tipo_cuenta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "tipo_cuenta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo cuenta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_cuenta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.moneda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "moneda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "moneda": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.nombre_sucursal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "nombre_sucursal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre sucursal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nombre_sucursal": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.sucursal_ciudad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "sucursal_ciudad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sucursal ciudad": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sucursal_ciudad": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Sucursal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.merchant_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "merchant_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "merchant name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "merchant_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "merchant": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "merchant nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "merchant title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "merchant label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "merchant tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "commercial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "trade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "business": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "trading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "wholesaler": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "dealer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.categoria_comercio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "categoria_comercio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria comercio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "categoria_comercio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.saldo_proyectado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "saldo_proyectado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "saldo proyectado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "saldo_proyectado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.dias_desde_ultima_tx": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "dias_desde_ultima_tx"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dias desde ultima tx": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dias_desde_ultima_tx": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.KPI_volumen_operado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "KPI Volumen Operado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI volumen operado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.KPI_total_transacciones": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "KPI Total Transacciones"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI total transacciones": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "kpi aggregate transaccione": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "kpi overall transaccione": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.KPI_ticket_promedio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "KPI Ticket Promedio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI ticket promedio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.KPI_clientes_activos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "KPI Clientes Activos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI clientes activos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.total_ingresos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "Total Ingresos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total ingresos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate ingreso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall ingreso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full.total_egresos_abs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "v_analytics_transacciones_full",
+			          "ConceptualProperty": "Total Egresos (Abs)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total egresos (abs)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total egresos": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "aggregate egreso (abs)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall egreso (abs)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "v_analytics_transacciones_full_fecha_hora_me_has_v_analytics_transacciones_full_fecha_hora_día": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full.fecha_hora.me": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.me"
+			          }
+			        },
+			        "v_analytics_transacciones_full.fecha_hora.día": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.me"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.día"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_fecha_hora_trimestre_has_v_analytics_transacciones_full_fecha_hora_me": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full.fecha_hora.trimestre": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			          }
+			        },
+			        "v_analytics_transacciones_full.fecha_hora.me": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.me"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_fecha_hora_año_has_v_analytics_transacciones_full_fecha_hora_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full.fecha_hora.año": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.año"
+			          }
+			        },
+			        "v_analytics_transacciones_full.fecha_hora.trimestre": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.año"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_fecha_hora_jerarquía_de_fecha_has_v_analytics_transacciones_full_fecha_hora_día": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			          }
+			        },
+			        "v_analytics_transacciones_full.fecha_hora.día": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_fecha_hora_jerarquía_de_fecha_has_v_analytics_transacciones_full_fecha_hora_me": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			          }
+			        },
+			        "v_analytics_transacciones_full.fecha_hora.me": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_fecha_hora_jerarquía_de_fecha_has_v_analytics_transacciones_full_fecha_hora_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			          }
+			        },
+			        "v_analytics_transacciones_full.fecha_hora.trimestre": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_fecha_hora_jerarquía_de_fecha_has_v_analytics_transacciones_full_fecha_hora_año": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			          }
+			        },
+			        "v_analytics_transacciones_full.fecha_hora.año": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_fecha_hora_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full.fecha_hora": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora"
+			          }
+			        },
+			        "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_horas_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_total_egresos_abs": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.total_egresos_abs": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.total_egresos_abs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.total_egresos_abs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_total_egresos_abs"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_total_ingresos": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.total_ingresos": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.total_ingresos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.total_ingresos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_total_ingresos"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_KPI_clientes_activos": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.KPI_clientes_activos": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.KPI_clientes_activos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.KPI_clientes_activos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_KPI_clientes_activos"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_KPI_ticket_promedio": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.KPI_ticket_promedio": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.KPI_ticket_promedio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.KPI_ticket_promedio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_KPI_ticket_promedio"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_KPI_total_transacciones": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.KPI_total_transacciones": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.KPI_total_transacciones"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.KPI_total_transacciones"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_KPI_total_transacciones"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_KPI_volumen_operado": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.KPI_volumen_operado": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.KPI_volumen_operado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.KPI_volumen_operado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_KPI_volumen_operado"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_dias_desde_ultima_tx": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.dias_desde_ultima_tx": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.dias_desde_ultima_tx"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.dias_desde_ultima_tx"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_dias_desde_ultima_tx"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_saldo_proyectado": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.saldo_proyectado": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.saldo_proyectado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.saldo_proyectado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_saldo_proyectados"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_categoria_comercio": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.categoria_comercio": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.categoria_comercio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.categoria_comercio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_categoria_comercios"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_merchant_name": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.merchant_name": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.merchant_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.merchant_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_merchant_names"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_sucursal_ciudad": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.sucursal_ciudad": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.sucursal_ciudad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.sucursal_ciudad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_sucursal_ciudad"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_nombre_sucursal": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.nombre_sucursal": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.nombre_sucursal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.nombre_sucursal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_nombre_sucursals"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_moneda": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.moneda": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.moneda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.moneda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_monedas"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_tipo_cuenta": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.tipo_cuenta": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.tipo_cuenta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.tipo_cuenta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_tipo_cuentas"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_cliente_profesion": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.cliente_profesion": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.cliente_profesion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.cliente_profesion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_cliente_profesions"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_cliente_apellido": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.cliente_apellido": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.cliente_apellido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.cliente_apellido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_cliente_apellidos"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_cliente_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.cliente_nombre": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.cliente_nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.cliente_nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_cliente_nombres"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.month": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_months"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.year": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_years"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_avg_historico_cuenta": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.avg_historico_cuenta": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.avg_historico_cuenta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.avg_historico_cuenta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_avg_historico_cuentas"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_tipo_movimiento": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.tipo_movimiento": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.tipo_movimiento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.tipo_movimiento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_tipo_movimientos"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_transaction_type_id": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.transaction_type_id": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.transaction_type_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.transaction_type_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_transaction_type_ids"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_fecha_hora": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.fecha_hora": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.fecha_hora"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.fecha_hora"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_fecha_horas"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_monto": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.monto": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.monto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.monto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_monto"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_merchant_id": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.merchant_id": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.merchant_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.merchant_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_merchant_ids"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_branch_id": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.branch_id": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.branch_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.branch_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_branch_ids"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_account_id": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.account_id": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.account_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.account_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_account_ids"
+			        }
+			      ]
+			    },
+			    "v_analytics_transacciones_full_has_transaction_id": {
+			      "Binding": {
+			        "ConceptualEntity": "v_analytics_transacciones_full"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "v_analytics_transacciones_full": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full"
+			          }
+			        },
+			        "v_analytics_transacciones_full.transaction_id": {
+			          "Target": {
+			            "Entity": "v_analytics_transacciones_full.transaction_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "v_analytics_transacciones_full"
+			            },
+			            "Object": {
+			              "Role": "v_analytics_transacciones_full.transaction_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "v_analytics_transacciones_full_have_transaction_ids"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

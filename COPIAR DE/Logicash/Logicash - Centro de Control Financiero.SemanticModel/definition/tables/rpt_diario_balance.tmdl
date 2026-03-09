@@ -1,0 +1,86 @@
+table rpt_diario_balance
+	lineageTag: c2613dfa-ec41-4de4-a655-af773fb758e0
+
+	measure 'Ticket Promedio Real' = DIVIDE( SUM(rpt_diario_balance[total_retiros]), SUM(rpt_diario_balance[total_transacciones]) )
+		lineageTag: f9c5eee5-4b2c-4931-9ec3-c0147b925c1d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column id_atm
+		dataType: string
+		lineageTag: 92597b18-cdf5-4f2e-9139-a761995f6159
+		summarizeBy: none
+		sourceColumn: id_atm
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_dia
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4249bbed-b781-41e6-8fc2-98330c5dbad4
+		summarizeBy: none
+		sourceColumn: fecha_dia
+
+		variation Variación
+			isDefault
+			relationship: 4c79c140-0716-4441-abb3-21c9130e8133
+			defaultHierarchy: LocalDateTable_d29bbe1b-7649-40bc-b305-55adc40f63be.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column total_transacciones
+		dataType: int64
+		formatString: 0
+		lineageTag: e31280bb-e35c-47f3-b7e7-26cb17d8df0a
+		summarizeBy: sum
+		sourceColumn: total_transacciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_depositos
+		dataType: double
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: b1a04382-4a1a-42b0-ac75-91415d854c21
+		summarizeBy: sum
+		sourceColumn: total_depositos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-US"}
+
+	column total_retiros
+		dataType: double
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: 84d4d34a-43bd-444c-b1c7-cb1cdf3d3245
+		summarizeBy: sum
+		sourceColumn: total_retiros
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-US"}
+
+	column flujo_neto_dia
+		dataType: double
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: 1ffeb6ea-8bbc-44d5-b14f-0b75b54ca6c0
+		summarizeBy: sum
+		sourceColumn: flujo_neto_dia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"es-US"}
+
+	partition rpt_diario_balance = m
+		mode: import
+		source =
+				let
+				    Origen = AmazonRedshift.Database("logicash-workgroup.243768738483.us-east-1.redshift-serverless.amazonaws.com","dev"),
+				    gold = Origen{[Name="gold"]}[Data],
+				    rpt_diario_balance1 = gold{[Name="rpt_diario_balance"]}[Data]
+				in
+				    rpt_diario_balance1
+
+	annotation PBI_ResultType = Exception
+

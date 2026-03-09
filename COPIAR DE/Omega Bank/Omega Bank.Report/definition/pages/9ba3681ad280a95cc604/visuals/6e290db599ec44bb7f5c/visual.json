@@ -1,0 +1,370 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "6e290db599ec44bb7f5c",
+  "position": {
+    "x": 23.132530120481928,
+    "y": 548.24096385542168,
+    "z": 11000,
+    "height": 150.36144578313252,
+    "width": 1226.0240963855422,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "v_analytics_transacciones_full"
+                    }
+                  },
+                  "Property": "fecha_hora"
+                }
+              },
+              "queryRef": "v_analytics_transacciones_full.fecha_hora",
+              "nativeQueryRef": "fecha_hora"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "v_analytics_transacciones_full"
+                    }
+                  },
+                  "Property": "cliente_nombre"
+                }
+              },
+              "queryRef": "v_analytics_transacciones_full.cliente_nombre",
+              "nativeQueryRef": "Nombre",
+              "displayName": "Nombre"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "v_analytics_transacciones_full"
+                    }
+                  },
+                  "Property": "cliente_apellido"
+                }
+              },
+              "queryRef": "v_analytics_transacciones_full.cliente_apellido",
+              "nativeQueryRef": "Apellido",
+              "displayName": "Apellido"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "v_analytics_transacciones_full"
+                    }
+                  },
+                  "Property": "categoria_comercio"
+                }
+              },
+              "queryRef": "v_analytics_transacciones_full.categoria_comercio",
+              "nativeQueryRef": "categoria_comercio"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "v_analytics_transacciones_full"
+                    }
+                  },
+                  "Property": "nombre_sucursal"
+                }
+              },
+              "queryRef": "v_analytics_transacciones_full.nombre_sucursal",
+              "nativeQueryRef": "nombre_sucursal"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "v_analytics_transacciones_full"
+                        }
+                      },
+                      "Property": "dias_desde_ultima_tx"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(v_analytics_transacciones_full.dias_desde_ultima_tx)",
+              "nativeQueryRef": "Dias_desde_ultima_tx",
+              "displayName": "Dias_desde_ultima_tx"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "v_analytics_transacciones_full"
+                        }
+                      },
+                      "Property": "monto"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(v_analytics_transacciones_full.monto)",
+              "nativeQueryRef": "Monto",
+              "displayName": "Monto"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "v_analytics_transacciones_full"
+                      }
+                    },
+                    "Property": "dias_desde_ultima_tx"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "191.9953890100992D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "v_analytics_transacciones_full.nombre_sucursal"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "327.8041078497647D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(v_analytics_transacciones_full.monto)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "127.65217391304347D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "v_analytics_transacciones_full.cliente_apellido"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "155.8695652173913D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(v_analytics_transacciones_full.dias_desde_ultima_tx)"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "dataBars": {
+              "positiveColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#00FF15'"
+                      }
+                    }
+                  }
+                }
+              },
+              "negativeColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#FF0000'"
+                      }
+                    }
+                  }
+                }
+              },
+              "axisColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#000000'"
+                      }
+                    }
+                  }
+                }
+              },
+              "reverseDirection": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "hideText": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "totalMatchingOption": {
+                "expr": {
+                  "Literal": {
+                    "Value": "1L"
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(v_analytics_transacciones_full.monto)"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1C3D5A'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#ffffff'"
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

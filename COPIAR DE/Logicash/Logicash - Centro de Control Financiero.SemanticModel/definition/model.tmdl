@@ -1,0 +1,21 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["top_atms_ranking","rpt_diario_balance"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table top_atms_ranking
+ref table rpt_diario_balance
+ref table DateTableTemplate_5a81c29b-cc6b-4392-a1eb-afb081e53327
+ref table LocalDateTable_d29bbe1b-7649-40bc-b305-55adc40f63be
+
+ref cultureInfo es-ES
+
