@@ -48,7 +48,9 @@
       "background": [
         {
           "properties": {
-            "show": false
+            "show": true,
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
           }
         }
       ],
@@ -58,6 +60,20 @@
             "show": true,
             "color": { "solid": { "color": "#E0E0E0" } },
             "radius": 8
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": true,
+            "preset": "BottomRight",
+            "color": { "solid": { "color": "#000000" } },
+            "transparency": 90,
+            "shadowSpread": 0,
+            "shadowBlur": 8,
+            "angle": 315,
+            "shadowDistance": 4
           }
         }
       ]
