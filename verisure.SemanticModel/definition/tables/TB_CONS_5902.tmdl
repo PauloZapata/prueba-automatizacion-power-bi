@@ -34,9 +34,12 @@ table TB_CONS_5902
 				let
 				    Origen = Excel.Workbook(File.Contents("D:\Descargas\VERISURE\archivos aparte\BASES DE DATOS.xlsx"), null, true),
 				    TB_CONS_590_Table = Origen{[Item="TB_CONS_590",Kind="Table"]}[Data],
-				    #"Tipo cambiado" = Table.TransformColumnTypes(TB_CONS_590_Table,{{"Instalación", Int64.Type}, {"TOTAL", type number}, {"TipoKIT", type text}})
+				    #"Tipo cambiado" = Table.TransformColumnTypes(TB_CONS_590_Table,{{"Instalación", Int64.Type}, {"TOTAL", type number}, {"TipoKIT", type text}}),
+				
+				    // Nueva línea: Reemplazar nulos en TOTAL por 0
+				    LimpiarTotal = Table.ReplaceValue(#"Tipo cambiado", null, 0, Replacer.ReplaceValue, {"TOTAL"})
 				in
-				    #"Tipo cambiado"
+				    LimpiarTotal
 
 	annotation PBI_NavigationStepName = Navegación
 

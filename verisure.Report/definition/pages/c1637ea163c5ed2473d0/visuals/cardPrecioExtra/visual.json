@@ -1,0 +1,35 @@
+{
+  "name": "cardPrecioExtra",
+  "type": "card",
+  "layout": {
+    "x": 1040,
+    "y": 90,
+    "z": 6,
+    "width": 220,
+    "height": 150,
+    "tabOrder": 6
+  },
+  "dataRoles": {
+    "Values": [
+      {
+        "table": "TB_FIN_ANALISIS",
+        "column": "PRECIOKIT_EXTRA",
+        "aggregation": "Average"
+      }
+    ]
+  },
+  "config": {
+    "title": {
+      "show": true,
+      "text": "Precio Extra Promedio",
+      "fontSize": 12
+    },
+    "categoryLabel": {
+      "show": false
+    },
+    "dataLabel": {
+      "fontSize": 28,
+      "fontColor": "#1976D2"
+    }
+  }
+}

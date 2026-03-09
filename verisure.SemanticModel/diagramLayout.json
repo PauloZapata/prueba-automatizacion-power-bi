@@ -11,7 +11,7 @@
         {
           "location": {
             "x": 0,
-            "y": 72
+            "y": 0
           },
           "nodeIndex": "TB_CONS_5902",
           "nodeLineageTag": "067d576c-dc27-4fda-aef2-96960325bfee",
@@ -23,10 +23,11 @@
         },
         {
           "location": {
-            "x": 284,
+            "x": 324,
             "y": 0
           },
           "nodeIndex": "TB_FIN_ANALISIS",
+          "nodeLineageTag": "e392a004-b611-4bc5-a7fd-1be829d3928c",
           "size": {
             "height": 296,
             "width": 234

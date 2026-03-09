@@ -1,0 +1,61 @@
+{
+  "name": "chartTendenciaMensual",
+  "type": "lineChart",
+  "layout": {
+    "x": 440,
+    "y": 260,
+    "z": 8,
+    "width": 400,
+    "height": 340,
+    "tabOrder": 8
+  },
+  "dataRoles": {
+    "Category": [
+      {
+        "table": "TB_FIN_ANALISIS",
+        "column": "MESVENTA"
+      }
+    ],
+    "Values": [
+      {
+        "table": "TB_CONS_5902",
+        "column": "TOTAL",
+        "aggregation": "Sum"
+      },
+      {
+        "table": "TB_CONS_5902",
+        "column": "Instalación",
+        "aggregation": "CountNonBlank"
+      }
+    ]
+  },
+  "config": {
+    "title": {
+      "show": true,
+      "text": "Tendencia Mensual de Ingresos e Instalaciones",
+      "fontSize": 14,
+      "fontFamily": "Segoe UI Semibold"
+    },
+    "dataColors": {
+      "colors": ["#D32F2F", "#424242"]
+    },
+    "legend": {
+      "show": true,
+      "position": "Top"
+    },
+    "xAxis": {
+      "show": true,
+      "title": "Mes de Venta"
+    },
+    "yAxis": {
+      "show": true,
+      "title": "Valores"
+    },
+    "markers": {
+      "show": true
+    },
+    "dataLabels": {
+      "show": false
+    }
+  }
+}

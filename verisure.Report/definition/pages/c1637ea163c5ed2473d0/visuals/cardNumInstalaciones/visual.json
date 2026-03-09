@@ -1,0 +1,35 @@
+{
+  "name": "cardNumInstalaciones",
+  "type": "card",
+  "layout": {
+    "x": 800,
+    "y": 90,
+    "z": 5,
+    "width": 220,
+    "height": 150,
+    "tabOrder": 5
+  },
+  "dataRoles": {
+    "Values": [
+      {
+        "table": "TB_CONS_5902",
+        "column": "Instalación",
+        "aggregation": "CountNonBlank"
+      }
+    ]
+  },
+  "config": {
+    "title": {
+      "show": true,
+      "text": "N° Instalaciones",
+      "fontSize": 12
+    },
+    "categoryLabel": {
+      "show": false
+    },
+    "dataLabel": {
+      "fontSize": 28,
+      "fontColor": "#424242"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "titleTextBox",
+  "type": "textbox",
+  "layout": {
+    "x": 20,
+    "y": 15,
+    "z": 1,
+    "width": 700,
+    "height": 40,
+    "tabOrder": 1
+  },
+  "config": {
+    "text": "Dashboard Ejecutivo de Operaciones - Paulo",
+    "fontFamily": "Segoe UI Semibold",
+    "fontSize": 24,
+    "fontColor": "#FFFFFF",
+    "alignment": "left"
+  }
+}

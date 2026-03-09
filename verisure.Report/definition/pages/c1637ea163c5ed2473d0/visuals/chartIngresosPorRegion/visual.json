@@ -1,0 +1,53 @@
+{
+  "name": "chartIngresosPorRegion",
+  "type": "columnChart",
+  "layout": {
+    "x": 20,
+    "y": 260,
+    "z": 7,
+    "width": 400,
+    "height": 340,
+    "tabOrder": 7
+  },
+  "dataRoles": {
+    "Category": [
+      {
+        "table": "TB_FIN_ANALISIS",
+        "column": "REGION_PORTFOLIO"
+      }
+    ],
+    "Values": [
+      {
+        "table": "TB_CONS_5902",
+        "column": "TOTAL",
+        "aggregation": "Sum"
+      }
+    ]
+  },
+  "config": {
+    "title": {
+      "show": true,
+      "text": "Ingresos por Región",
+      "fontSize": 14,
+      "fontFamily": "Segoe UI Semibold"
+    },
+    "dataColors": {
+      "colors": ["#D32F2F", "#E57373", "#EF5350"]
+    },
+    "legend": {
+      "show": false
+    },
+    "xAxis": {
+      "show": true,
+      "title": "Región"
+    },
+    "yAxis": {
+      "show": true,
+      "title": "Ingresos"
+    },
+    "dataLabels": {
+      "show": true,
+      "fontSize": 10
+    }
+  }
+}

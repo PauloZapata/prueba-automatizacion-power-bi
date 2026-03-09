@@ -1,0 +1,50 @@
+{
+  "name": "chartFormaPago",
+  "type": "donutChart",
+  "layout": {
+    "x": 860,
+    "y": 260,
+    "z": 9,
+    "width": 400,
+    "height": 340,
+    "tabOrder": 9
+  },
+  "dataRoles": {
+    "Category": [
+      {
+        "table": "TB_FIN_ANALISIS",
+        "column": "FORMAPAGO_ACT"
+      }
+    ],
+    "Values": [
+      {
+        "table": "TB_CONS_5902",
+        "column": "TOTAL",
+        "aggregation": "Sum"
+      }
+    ]
+  },
+  "config": {
+    "title": {
+      "show": true,
+      "text": "Distribución por Forma de Pago",
+      "fontSize": 14,
+      "fontFamily": "Segoe UI Semibold"
+    },
+    "dataColors": {
+      "colors": ["#D32F2F", "#E57373", "#EF5350", "#424242", "#757575", "#BDBDBD"]
+    },
+    "legend": {
+      "show": true,
+      "position": "Right"
+    },
+    "dataLabels": {
+      "show": true,
+      "displayUnits": "Auto",
+      "fontSize": 11
+    },
+    "detail": {
+      "percentage": true
+    }
+  }
+}

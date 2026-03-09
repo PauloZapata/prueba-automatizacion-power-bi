@@ -1,0 +1,35 @@
+{
+  "name": "cardTotalIngresos",
+  "type": "card",
+  "layout": {
+    "x": 560,
+    "y": 90,
+    "z": 4,
+    "width": 220,
+    "height": 150,
+    "tabOrder": 4
+  },
+  "dataRoles": {
+    "Values": [
+      {
+        "table": "TB_CONS_5902",
+        "column": "TOTAL",
+        "aggregation": "Sum"
+      }
+    ]
+  },
+  "config": {
+    "title": {
+      "show": true,
+      "text": "Ingresos Totales",
+      "fontSize": 12
+    },
+    "categoryLabel": {
+      "show": false
+    },
+    "dataLabel": {
+      "fontSize": 28,
+      "fontColor": "#D32F2F"
+    }
+  }
+}

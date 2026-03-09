@@ -1,0 +1,22 @@
+{
+  "name": "headerBackground",
+  "type": "shape",
+  "layout": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "width": 1280,
+    "height": 70,
+    "tabOrder": 0
+  },
+  "config": {
+    "fill": {
+      "show": true,
+      "color": {"solid": {"color": "#D32F2F"}}
+    },
+    "line": {
+      "show": false
+    },
+    "transparency": 0
+  }
+}

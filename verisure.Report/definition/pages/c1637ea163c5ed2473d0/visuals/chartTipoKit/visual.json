@@ -1,0 +1,50 @@
+{
+  "name": "chartTipoKit",
+  "type": "barChart",
+  "layout": {
+    "x": 20,
+    "y": 620,
+    "z": 10,
+    "width": 600,
+    "height": 80,
+    "tabOrder": 10
+  },
+  "dataRoles": {
+    "Category": [
+      {
+        "table": "TB_FIN_ANALISIS",
+        "column": "TIPOKIT"
+      }
+    ],
+    "Values": [
+      {
+        "table": "TB_FIN_ANALISIS",
+        "column": "contrato",
+        "aggregation": "CountNonBlank"
+      }
+    ]
+  },
+  "config": {
+    "title": {
+      "show": true,
+      "text": "Top Tipos de Kit por Contratos",
+      "fontSize": 11
+    },
+    "dataColors": {
+      "colors": ["#1976D2"]
+    },
+    "legend": {
+      "show": false
+    },
+    "xAxis": {
+      "show": true
+    },
+    "yAxis": {
+      "show": true
+    },
+    "dataLabels": {
+      "show": true,
+      "fontSize": 9
+    }
+  }
+}
