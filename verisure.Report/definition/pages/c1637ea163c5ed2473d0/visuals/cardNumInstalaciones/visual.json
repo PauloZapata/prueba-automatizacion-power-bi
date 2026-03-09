@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "cardNumInstalaciones",
-  "type": "card",
-  "layout": {
+  "position": {
     "x": 800,
     "y": 90,
     "z": 5,
@@ -9,27 +9,42 @@
     "height": 150,
     "tabOrder": 5
   },
-  "dataRoles": {
-    "Values": [
-      {
-        "table": "TB_CONS_5902",
-        "column": "Instalación",
-        "aggregation": "CountNonBlank"
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": { "Entity": "TB_CONS_5902" }
+                      },
+                      "Property": "Instalación"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonBlank(TB_CONS_5902.Instalación)"
+            }
+          ]
+        }
       }
-    ]
-  },
-  "config": {
-    "title": {
-      "show": true,
-      "text": "N° Instalaciones",
-      "fontSize": 12
     },
-    "categoryLabel": {
-      "show": false
-    },
-    "dataLabel": {
-      "fontSize": 28,
-      "fontColor": "#424242"
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "N° Instalaciones",
+            "fontSize": 12
+          }
+        }
+      ]
     }
   }
 }

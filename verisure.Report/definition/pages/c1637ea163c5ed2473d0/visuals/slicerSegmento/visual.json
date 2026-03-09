@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "slicerSegmento",
-  "type": "slicer",
-  "layout": {
+  "position": {
     "x": 290,
     "y": 90,
     "z": 3,
@@ -9,22 +9,36 @@
     "height": 150,
     "tabOrder": 3
   },
-  "dataRoles": {
-    "Values": [
-      {
-        "table": "TB_FIN_ANALISIS",
-        "column": "segmento"
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "segmento"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.segmento"
+            }
+          ]
+        }
       }
-    ]
-  },
-  "config": {
-    "header": {
-      "show": true,
-      "title": "Segmento"
     },
-    "slicer": {
-      "orientation": "vertical",
-      "selectionDisplay": "multiple"
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Segmento"
+          }
+        }
+      ]
     }
   }
 }

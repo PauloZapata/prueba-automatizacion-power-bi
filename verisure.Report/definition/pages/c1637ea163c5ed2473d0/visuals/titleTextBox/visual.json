@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "titleTextBox",
-  "type": "textbox",
-  "layout": {
+  "position": {
     "x": 20,
     "y": 15,
     "z": 1,
@@ -9,11 +9,29 @@
     "height": 40,
     "tabOrder": 1
   },
-  "config": {
-    "text": "Dashboard Ejecutivo de Operaciones - Paulo",
-    "fontFamily": "Segoe UI Semibold",
-    "fontSize": 24,
-    "fontColor": "#FFFFFF",
-    "alignment": "left"
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Dashboard Ejecutivo de Operaciones - Paulo",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "24px",
+                      "color": "#FFFFFF"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
   }
 }

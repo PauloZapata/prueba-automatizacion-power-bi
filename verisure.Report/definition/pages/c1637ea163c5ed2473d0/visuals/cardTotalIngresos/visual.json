@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "cardTotalIngresos",
-  "type": "card",
-  "layout": {
+  "position": {
     "x": 560,
     "y": 90,
     "z": 4,
@@ -9,27 +9,42 @@
     "height": 150,
     "tabOrder": 4
   },
-  "dataRoles": {
-    "Values": [
-      {
-        "table": "TB_CONS_5902",
-        "column": "TOTAL",
-        "aggregation": "Sum"
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": { "Entity": "TB_CONS_5902" }
+                      },
+                      "Property": "TOTAL"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(TB_CONS_5902.TOTAL)"
+            }
+          ]
+        }
       }
-    ]
-  },
-  "config": {
-    "title": {
-      "show": true,
-      "text": "Ingresos Totales",
-      "fontSize": 12
     },
-    "categoryLabel": {
-      "show": false
-    },
-    "dataLabel": {
-      "fontSize": 28,
-      "fontColor": "#D32F2F"
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Ingresos Totales",
+            "fontSize": 12
+          }
+        }
+      ]
     }
   }
 }

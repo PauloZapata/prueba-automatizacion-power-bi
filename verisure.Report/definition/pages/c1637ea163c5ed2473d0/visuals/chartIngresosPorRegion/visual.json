@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "chartIngresosPorRegion",
-  "type": "columnChart",
-  "layout": {
+  "position": {
     "x": 20,
     "y": 260,
     "z": 7,
@@ -9,45 +9,57 @@
     "height": 340,
     "tabOrder": 7
   },
-  "dataRoles": {
-    "Category": [
-      {
-        "table": "TB_FIN_ANALISIS",
-        "column": "REGION_PORTFOLIO"
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "REGION_PORTFOLIO"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.REGION_PORTFOLIO"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": { "Entity": "TB_CONS_5902" }
+                      },
+                      "Property": "TOTAL"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(TB_CONS_5902.TOTAL)"
+            }
+          ]
+        }
       }
-    ],
-    "Values": [
-      {
-        "table": "TB_CONS_5902",
-        "column": "TOTAL",
-        "aggregation": "Sum"
-      }
-    ]
-  },
-  "config": {
-    "title": {
-      "show": true,
-      "text": "Ingresos por Región",
-      "fontSize": 14,
-      "fontFamily": "Segoe UI Semibold"
     },
-    "dataColors": {
-      "colors": ["#D32F2F", "#E57373", "#EF5350"]
-    },
-    "legend": {
-      "show": false
-    },
-    "xAxis": {
-      "show": true,
-      "title": "Región"
-    },
-    "yAxis": {
-      "show": true,
-      "title": "Ingresos"
-    },
-    "dataLabels": {
-      "show": true,
-      "fontSize": 10
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Ingresos por Región",
+            "fontSize": 14
+          }
+        }
+      ]
     }
   }
 }

@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "slicerRegion",
-  "type": "slicer",
-  "layout": {
+  "position": {
     "x": 20,
     "y": 90,
     "z": 2,
@@ -9,22 +9,36 @@
     "height": 150,
     "tabOrder": 2
   },
-  "dataRoles": {
-    "Values": [
-      {
-        "table": "TB_FIN_ANALISIS",
-        "column": "REGION_PORTFOLIO"
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "REGION_PORTFOLIO"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.REGION_PORTFOLIO"
+            }
+          ]
+        }
       }
-    ]
-  },
-  "config": {
-    "header": {
-      "show": true,
-      "title": "Región"
     },
-    "slicer": {
-      "orientation": "vertical",
-      "selectionDisplay": "multiple"
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Región"
+          }
+        }
+      ]
     }
   }
 }

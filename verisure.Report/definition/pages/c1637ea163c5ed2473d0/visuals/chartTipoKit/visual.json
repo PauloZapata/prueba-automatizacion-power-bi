@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "chartTipoKit",
-  "type": "barChart",
-  "layout": {
+  "position": {
     "x": 20,
     "y": 620,
     "z": 10,
@@ -9,42 +9,57 @@
     "height": 80,
     "tabOrder": 10
   },
-  "dataRoles": {
-    "Category": [
-      {
-        "table": "TB_FIN_ANALISIS",
-        "column": "TIPOKIT"
+  "visual": {
+    "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "TIPOKIT"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.TIPOKIT"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                      },
+                      "Property": "contrato"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonBlank(TB_FIN_ANALISIS.contrato)"
+            }
+          ]
+        }
       }
-    ],
-    "Values": [
-      {
-        "table": "TB_FIN_ANALISIS",
-        "column": "contrato",
-        "aggregation": "CountNonBlank"
-      }
-    ]
-  },
-  "config": {
-    "title": {
-      "show": true,
-      "text": "Top Tipos de Kit por Contratos",
-      "fontSize": 11
     },
-    "dataColors": {
-      "colors": ["#1976D2"]
-    },
-    "legend": {
-      "show": false
-    },
-    "xAxis": {
-      "show": true
-    },
-    "yAxis": {
-      "show": true
-    },
-    "dataLabels": {
-      "show": true,
-      "fontSize": 9
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Top Tipos de Kit por Contratos",
+            "fontSize": 11
+          }
+        }
+      ]
     }
   }
 }

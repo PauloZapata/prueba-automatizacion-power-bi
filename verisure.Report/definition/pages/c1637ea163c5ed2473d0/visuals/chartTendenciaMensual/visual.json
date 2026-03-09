@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "chartTendenciaMensual",
-  "type": "lineChart",
-  "layout": {
+  "position": {
     "x": 440,
     "y": 260,
     "z": 8,
@@ -9,53 +9,73 @@
     "height": 340,
     "tabOrder": 8
   },
-  "dataRoles": {
-    "Category": [
-      {
-        "table": "TB_FIN_ANALISIS",
-        "column": "MESVENTA"
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "MESVENTA"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.MESVENTA"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": { "Entity": "TB_CONS_5902" }
+                      },
+                      "Property": "TOTAL"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(TB_CONS_5902.TOTAL)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": { "Entity": "TB_CONS_5902" }
+                      },
+                      "Property": "Instalación"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonBlank(TB_CONS_5902.Instalación)"
+            }
+          ]
+        }
       }
-    ],
-    "Values": [
-      {
-        "table": "TB_CONS_5902",
-        "column": "TOTAL",
-        "aggregation": "Sum"
-      },
-      {
-        "table": "TB_CONS_5902",
-        "column": "Instalación",
-        "aggregation": "CountNonBlank"
-      }
-    ]
-  },
-  "config": {
-    "title": {
-      "show": true,
-      "text": "Tendencia Mensual de Ingresos e Instalaciones",
-      "fontSize": 14,
-      "fontFamily": "Segoe UI Semibold"
     },
-    "dataColors": {
-      "colors": ["#D32F2F", "#424242"]
-    },
-    "legend": {
-      "show": true,
-      "position": "Top"
-    },
-    "xAxis": {
-      "show": true,
-      "title": "Mes de Venta"
-    },
-    "yAxis": {
-      "show": true,
-      "title": "Valores"
-    },
-    "markers": {
-      "show": true
-    },
-    "dataLabels": {
-      "show": false
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Tendencia Mensual de Ingresos e Instalaciones",
+            "fontSize": 14
+          }
+        }
+      ]
     }
   }
 }

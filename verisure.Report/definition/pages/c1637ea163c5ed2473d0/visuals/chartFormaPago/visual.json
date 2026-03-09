@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "chartFormaPago",
-  "type": "donutChart",
-  "layout": {
+  "position": {
     "x": 860,
     "y": 260,
     "z": 9,
@@ -9,42 +9,57 @@
     "height": 340,
     "tabOrder": 9
   },
-  "dataRoles": {
-    "Category": [
-      {
-        "table": "TB_FIN_ANALISIS",
-        "column": "FORMAPAGO_ACT"
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "FORMAPAGO_ACT"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.FORMAPAGO_ACT"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": { "Entity": "TB_CONS_5902" }
+                      },
+                      "Property": "TOTAL"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(TB_CONS_5902.TOTAL)"
+            }
+          ]
+        }
       }
-    ],
-    "Values": [
-      {
-        "table": "TB_CONS_5902",
-        "column": "TOTAL",
-        "aggregation": "Sum"
-      }
-    ]
-  },
-  "config": {
-    "title": {
-      "show": true,
-      "text": "Distribución por Forma de Pago",
-      "fontSize": 14,
-      "fontFamily": "Segoe UI Semibold"
     },
-    "dataColors": {
-      "colors": ["#D32F2F", "#E57373", "#EF5350", "#424242", "#757575", "#BDBDBD"]
-    },
-    "legend": {
-      "show": true,
-      "position": "Right"
-    },
-    "dataLabels": {
-      "show": true,
-      "displayUnits": "Auto",
-      "fontSize": 11
-    },
-    "detail": {
-      "percentage": true
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Distribución por Forma de Pago",
+            "fontSize": 14
+          }
+        }
+      ]
     }
   }
 }

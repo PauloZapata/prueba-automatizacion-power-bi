@@ -1,7 +1,7 @@
 {
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
   "name": "cardPrecioExtra",
-  "type": "card",
-  "layout": {
+  "position": {
     "x": 1040,
     "y": 90,
     "z": 6,
@@ -9,27 +9,42 @@
     "height": 150,
     "tabOrder": 6
   },
-  "dataRoles": {
-    "Values": [
-      {
-        "table": "TB_FIN_ANALISIS",
-        "column": "PRECIOKIT_EXTRA",
-        "aggregation": "Average"
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                      },
+                      "Property": "PRECIOKIT_EXTRA"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Average(TB_FIN_ANALISIS.PRECIOKIT_EXTRA)"
+            }
+          ]
+        }
       }
-    ]
-  },
-  "config": {
-    "title": {
-      "show": true,
-      "text": "Precio Extra Promedio",
-      "fontSize": 12
     },
-    "categoryLabel": {
-      "show": false
-    },
-    "dataLabel": {
-      "fontSize": 28,
-      "fontColor": "#1976D2"
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Precio Extra Promedio",
+            "fontSize": 12
+          }
+        }
+      ]
     }
   }
 }
