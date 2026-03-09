@@ -34,25 +34,83 @@
       "data": [
         {
           "properties": {
-            "mode": "List"
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
           }
         }
       ],
       "items": [
         {
           "properties": {
-            "fontColor": { "solid": { "color": "#FFFFFF" } },
-            "background": { "solid": { "color": "transparent" } }
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'transparent'"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       ],
       "header": [
         {
           "properties": {
-            "show": true,
-            "fontColor": { "solid": { "color": "#FFFFFF" } },
-            "background": { "solid": { "color": "transparent" } },
-            "textSize": 11
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'transparent'"
+                    }
+                  }
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
           }
         }
       ]

@@ -80,15 +80,57 @@
       "labels": [
         {
           "properties": {
-            "fontSize": 32,
-            "color": { "solid": { "color": "#1F2A38" } }
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "32D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1F2A38'"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       ],
       "categoryLabels": [
         {
           "properties": {
-            "show": false
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ticket Promedio'"
+                }
+              }
+            }
           }
         }
       ]

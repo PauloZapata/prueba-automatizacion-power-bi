@@ -80,15 +80,57 @@
       "labels": [
         {
           "properties": {
-            "fontSize": 32,
-            "color": { "solid": { "color": "#E2001A" } }
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "32D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E2001A'"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       ],
       "categoryLabels": [
         {
           "properties": {
-            "show": false
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total de Ingresos'"
+                }
+              }
+            }
           }
         }
       ]

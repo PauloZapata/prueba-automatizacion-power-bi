@@ -11,6 +11,15 @@
   },
   "visual": {
     "visualType": "textbox",
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
+      ]
+    },
     "objects": {
       "general": [
         {
