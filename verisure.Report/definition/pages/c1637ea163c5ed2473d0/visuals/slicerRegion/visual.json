@@ -1,0 +1,131 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "slicerRegion",
+  "position": {
+    "x": 850,
+    "y": 10,
+    "z": 2,
+    "width": 200,
+    "height": 60,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+                  },
+                  "Property": "REGION_PORTFOLIO"
+                }
+              },
+              "queryRef": "TB_FIN_ANALISIS.REGION_PORTFOLIO"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": "List"
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "fontColor": { "solid": { "color": "#FFFFFF" } },
+            "background": { "solid": { "color": "transparent" } }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": true,
+            "fontColor": { "solid": { "color": "#FFFFFF" } },
+            "background": { "solid": { "color": "transparent" } },
+            "textSize": 11
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": true,
+            "text": "Región",
+            "fontColor": { "solid": { "color": "#FFFFFF" } },
+            "fontSize": 11
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": false
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "filterBlankRegion",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
+            },
+            "Property": "REGION_PORTFOLIO"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            { "Name": "t", "Entity": "TB_FIN_ANALISIS" }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": { "SourceRef": { "Source": "t" } },
+                          "Property": "REGION_PORTFOLIO"
+                        }
+                      },
+                      "Right": {
+                        "Literal": { "Value": "null" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
