@@ -1,0 +1,15 @@
+# Power BI cache and local settings
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Backup and temporary files
+*.tmp
+*.bak
+*~
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/

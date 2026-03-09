@@ -1,0 +1,5 @@
+relationship d1c91b8d-7b1f-445a-9f5b-ab21f353e2f0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TB_FIN_ANALISIS.MESVENTA
+	toColumn: LocalDateTable_223b06f1-c242-49ee-9b93-fd0963940c6b.Date
+

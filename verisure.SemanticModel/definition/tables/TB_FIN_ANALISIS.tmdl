@@ -1,0 +1,107 @@
+table TB_FIN_ANALISIS
+	lineageTag: e392a004-b611-4bc5-a7fd-1be829d3928c
+
+	column contrato
+		dataType: int64
+		formatString: 0
+		lineageTag: bffca5f1-a0ed-4121-8f7b-afd344fbb94d
+		summarizeBy: sum
+		sourceColumn: contrato
+
+		annotation SummarizationSetBy = Automatic
+
+	column segmento
+		dataType: string
+		lineageTag: 058e258b-1ed2-4bd8-8590-b0e1165d1741
+		summarizeBy: none
+		sourceColumn: segmento
+
+		annotation SummarizationSetBy = Automatic
+
+	column FORMAPAGO_ACT
+		dataType: string
+		lineageTag: 6f1d1b9b-8cad-4f44-94b4-d40b65e0606a
+		summarizeBy: none
+		sourceColumn: FORMAPAGO_ACT
+
+		annotation SummarizationSetBy = Automatic
+
+	column MESVENTA
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ddfdc40f-741f-4201-8fa0-128dbf38bd91
+		summarizeBy: none
+		sourceColumn: MESVENTA
+
+		variation Variación
+			isDefault
+			relationship: d1c91b8d-7b1f-445a-9f5b-ab21f353e2f0
+			defaultHierarchy: LocalDateTable_223b06f1-c242-49ee-9b93-fd0963940c6b.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column TIPOKIT
+		dataType: string
+		lineageTag: db087651-2f23-4cb5-b4d5-c21be5bd4574
+		summarizeBy: none
+		sourceColumn: TIPOKIT
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPOPAI
+		dataType: string
+		lineageTag: 60839049-d933-4ed6-9b91-a88e4995161c
+		summarizeBy: none
+		sourceColumn: TIPOPAI
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRECIOKIT_EXTRA
+		dataType: double
+		lineageTag: bbf04ce2-cdb2-47d8-af54-9ae5a2103c13
+		summarizeBy: sum
+		sourceColumn: PRECIOKIT_EXTRA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REGION_PORTFOLIO
+		dataType: string
+		lineageTag: e396b8d2-1283-4b43-9b8e-c8202bf25bde
+		summarizeBy: none
+		sourceColumn: REGION_PORTFOLIO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TB_FIN_ANALISIS = m
+		mode: import
+		source = ```
+				let
+				    Origen = Excel.Workbook(File.Contents("D:\Descargas\VERISURE\archivos aparte\BASES DE DATOS.xlsx"), null, true),
+				    TB_FIN_ANALISIS_Table = Origen{[Item="TB_FIN_ANALISIS",Kind="Table"]}[Data],
+				    
+				    // 1. Limpieza de columnas y tipos iniciales
+				    #"Tipo cambiado" = Table.TransformColumnTypes(TB_FIN_ANALISIS_Table,{{"contrato", Int64.Type}, {"contrato2", Int64.Type}, {"segmento", type text}, {"FORMAPAGO_ACT", type text}, {"MESVENTA", type date}, {"TIPOKIT", type text}, {"TIPOPAI", type text}, {"PRECIOKIT_EXTRA", type number}, {"REGION_PORTFOLIO", type text}}),
+				    
+				    // 2. Eliminar columna duplicada
+				    RemoverContrato2 = Table.RemoveColumns(#"Tipo cambiado",{"contrato2"}),
+				    
+				    // 3. Estandarizar REGION_PORTFOLIO (Mayúsculas y quitar nulos)
+				    LimpiarRegion = Table.TransformColumns(RemoverContrato2, {{"REGION_PORTFOLIO", each Text.Upper(Text.From(_ ?? "SIN REGION")), type text}}),
+				    
+				    // 4. Tratar nulos en TIPOKIT y TIPOPAI
+				    LimpiarNulosTexto = Table.ReplaceValue(LimpiarRegion, null, "NO DEFINIDO", Replacer.ReplaceValue, {"TIPOKIT", "TIPOPAI"}),
+				    
+				    // 5. Tratar nulos en Precio (poner 0)
+				    LimpiarPrecio = Table.ReplaceValue(LimpiarNulosTexto, null, 0, Replacer.ReplaceValue, {"PRECIOKIT_EXTRA"})
+				in
+				    LimpiarPrecio
+				```
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

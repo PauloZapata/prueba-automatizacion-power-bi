@@ -1,0 +1,21 @@
+model Model
+	culture: es-PE
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["TB_FIN_ANALISIS","TB_CONS_5902"]
+
+ref table TB_FIN_ANALISIS
+ref table DateTableTemplate_14dd5442-a5dd-4e3f-af79-ff2f42140ff1
+ref table LocalDateTable_223b06f1-c242-49ee-9b93-fd0963940c6b
+ref table TB_CONS_5902
+
+ref cultureInfo es-PE
+
