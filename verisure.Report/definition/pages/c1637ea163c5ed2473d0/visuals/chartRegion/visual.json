@@ -37,10 +37,10 @@
                   "Expression": {
                     "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
                   },
-                  "Property": "Total Ingresos"
+                  "Property": "Total de Ingresos"
                 }
               },
-              "queryRef": "TB_FIN_ANALISIS.Total Ingresos",
+              "queryRef": "TB_FIN_ANALISIS.Total de Ingresos",
               "active": true
             }
           ]

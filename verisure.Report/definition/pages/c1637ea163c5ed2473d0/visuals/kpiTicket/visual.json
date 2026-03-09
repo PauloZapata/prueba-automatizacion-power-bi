@@ -3,7 +3,7 @@
   "name": "kpiTicket",
   "position": {
     "x": 860,
-    "y": 100,
+    "y": 120,
     "z": 3,
     "width": 390,
     "height": 120,
@@ -35,11 +35,7 @@
       "title": [
         {
           "properties": {
-            "show": true,
-            "text": "Ticket Promedio",
-            "fontColor": { "solid": { "color": "#1F2A38" } },
-            "fontSize": 14,
-            "fontFamily": "Segoe UI Semibold"
+            "show": false
           }
         }
       ],
@@ -85,31 +81,6 @@
                 "Literal": {
                   "Value": "false"
                 }
-              }
-            }
-          }
-        }
-      ],
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Ticket Promedio'"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": "#1F2A38"
               }
             }
           }

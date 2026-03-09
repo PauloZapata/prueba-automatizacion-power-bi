@@ -3,7 +3,7 @@
   "name": "kpiIngresos",
   "position": {
     "x": 30,
-    "y": 100,
+    "y": 120,
     "z": 3,
     "width": 390,
     "height": 120,
@@ -21,10 +21,10 @@
                   "Expression": {
                     "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
                   },
-                  "Property": "Total Ingresos"
+                  "Property": "Total de Ingresos"
                 }
               },
-              "queryRef": "TB_FIN_ANALISIS.Total Ingresos",
+              "queryRef": "TB_FIN_ANALISIS.Total de Ingresos",
               "active": true
             }
           ]
@@ -35,11 +35,7 @@
       "title": [
         {
           "properties": {
-            "show": true,
-            "text": "Total Ingresos",
-            "fontColor": { "solid": { "color": "#1F2A38" } },
-            "fontSize": 14,
-            "fontFamily": "Segoe UI Semibold"
+            "show": false
           }
         }
       ],
@@ -85,31 +81,6 @@
                 "Literal": {
                   "Value": "false"
                 }
-              }
-            }
-          }
-        }
-      ],
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Total de Ingresos'"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": "#1F2A38"
               }
             }
           }

@@ -37,10 +37,10 @@
                   "Expression": {
                     "SourceRef": { "Entity": "TB_FIN_ANALISIS" }
                   },
-                  "Property": "Total Ingresos"
+                  "Property": "Total de Ingresos"
                 }
               },
-              "queryRef": "TB_FIN_ANALISIS.Total Ingresos",
+              "queryRef": "TB_FIN_ANALISIS.Total de Ingresos",
               "active": true
             }
           ]
@@ -52,7 +52,7 @@
         {
           "properties": {
             "show": true,
-            "text": "Tendencia Mensual de Ingresos",
+            "text": "Tendencia Mensual",
             "fontColor": { "solid": { "color": "#1F2A38" } },
             "fontSize": 14,
             "fontFamily": "Segoe UI Semibold"
